@@ -1,0 +1,37 @@
+{
+  "name": "@amir-bagjani/loc-counter",
+  "version": "0.1.0",
+  "description": "CLI to count lines of code in frontend projects",
+  "main": "dist/loc-counter.js",
+  "types": "dist/loc-counter.d.ts",
+  "bin": {
+    "loc-counter": "dist/loc-counter.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build",
+    "test": "echo \"no tests\"",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir-bagjani/loc-counter.git"
+  },
+  "keywords": [
+    "cli",
+    "loc",
+    "lines-of-code",
+    "typescript"
+  ],
+  "author": "Amir Bagjani <amirbagjani@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
