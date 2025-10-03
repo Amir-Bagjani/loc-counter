@@ -55,10 +55,14 @@ loc-counter ./app --format json
 
 ## ⚙️ Options
 
-| Flag              | Description                                                                 | Default |
-|-------------------|-----------------------------------------------------------------------------|---------|
-| `--top <N>`       | Show the N largest files by line count                                      | 10      |
-| `--format <type>` | Output format: `text` or `json`                                             | text    |
+| Flag                             | Description                                                                 | Default |
+|----------------------------------|-----------------------------------------------------------------------------|---------|
+| `--top <N>`                      | Show the N largest files by line count                                      | 10      |
+| `--format <type>`                | Output format: `text` or `json`                                             | text    |
+| `--ext <type>` or `--extensions` | comma-separated extensions to include (without dot)                         | ts,tsx,js,jsx,css,scss,sass,less,html,vue    |
+| `--exclude <type>`                      | comma-separated directory names to ignore                                     | node_modules,.git,dist,build,.next,out,coverage,public      |
+| `--count-empty <type>`            | include empty lines in "code" counts                                       | false   |
+| `--no-count-comments <type>`      | do not try to detect comment-only lines                                    | true    |
 ---
 
 ## 📊 Example Output
